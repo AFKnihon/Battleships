@@ -232,10 +232,14 @@ for (int i=0; i < i+1; i++) {
         std::cout << "===============================\n";
         getchar();
         Clearing.Clear();
+bool alwaysFALSE = false;
+Player1Info.additionalRoundSave(alwaysFALSE);
 
+Player2Info.additionalRoundSave(alwaysFALSE);
 
         for (int rounds = 0; rounds <= rounds+1; rounds++) {
             if (Player1Info.IsMyTurnnPlayer1(rounds)) {
+                
                 // Player 1's turn
                 std::cout <<"=============\n";
                 std::cout <<"Player 1 Turn\n";
@@ -392,10 +396,10 @@ for (int i=0; i < i+1; i++) {
             }else{}
 
             if(Player1Info.additionalRoundGetter()) {
-                rounds=0;
+                rounds=1;
             }else{}
             if (Player2Info.additionalRoundGetter()) {
-                rounds=1;
+                rounds=0;
             }else {}
         }
     }
