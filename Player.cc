@@ -8,8 +8,8 @@ bool Player::IsMyTurnnPlayer1(int i) {
 
     int EverTurn = i%2;
     switch (EverTurn) {
-        case 0: return false;
-        case 1: return true;
+        case 0: return true;
+        case 1: return false;
     }
     return false;
 }
@@ -18,8 +18,8 @@ bool Player::IsMyTurnnPlayer2(int i) {
 
     int EverTurn = i%2;
     switch (EverTurn) {
-        case 0: return true;
-        case 1: return false;
+        case 0: return false;
+        case 1: return true;
     }
     return false;
 }
